@@ -40,6 +40,3 @@ jobs:
           file: ./Dockerfile
           push: true
           tag: ${{ secrets.DOCKERHUB_USERNAME }}/sample-app-nodejs:1.0.0
-    
-      - name: Image Digest
-        run: ${{ step.docker_build.outputs.digest }}
